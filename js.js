@@ -108,7 +108,7 @@ let ladder={
 		alert("Step="+this.step);
 		console.log("Step="+this.step);
 	}
-}*/
+}
 function calculator(a,b){
 	this.read=function(){
 		this.a=prompt("Vvedite znachenie",0);
@@ -145,6 +145,57 @@ function constructor(startingValue){
 let pr = new constructor(15);
 
 console.log(pr.add());
+*/
+function readNumber(){
+	let znach;
+	do{
+		znach =prompt("Vvedite znachenie")
+	}while(znach != undefined && znach != '')
+	return znach;
+}
+
+
+
+function Random(min,max) {
+  alert( min + Math.random() * (max - min))
+
+}
+
+function sum(){
+	var a=prompt("Vvedite a",0);
+	var b=prompt("Vvedite b",0);
+	var sum = (+a)+(+b);
+	alert(sum);
+	return sum;
+}
+
+
+
+function strJS(){
+	let array=[
+	" Спочатку JavaScript був створений, щоб зробити веб-сторінки живими ", 
+	" Різні двигуни мають різні «кодові імена».",
+ 	" Коли JavaScript створювався, він мав інше ім'я – «LiveScript» ",
+ 	" Повна інтеграція з HTML/CSS "
+]
+	for(let i=0; i<4;i++){
+		if(array[i].indexOF('JavaScript')>-1){
+			console.log(array[i]);
+		}
+	}
+}
+
+function corect_str(){
+	let s=prompt("Vvedite stroky");
+	if(s.length) 
+    {
+        s = s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+    }
+    return s;
+	alert(s);
+}
+
+
 
 
 
