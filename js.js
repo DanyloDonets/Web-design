@@ -109,7 +109,7 @@ let ladder={
 		console.log("Step="+this.step);
 	}
 }*/
-function calculator(a,b){
+function Calculator(a,b){
 	this.read=function(){
 		this.a=prompt("Vvedite znachenie",0);
 		this.b=prompt("Vvedite znachenie",0);
@@ -126,23 +126,16 @@ function calculator(a,b){
 	}
 }
 
-let constr = new calculator(0,0);
+let constr = new Calculator(0,0);
 
 
 
-function constructor(startingValue){
+function Constructor(startingValue){
 	this.startingValue=startingValue,
-	Value=this.startingValue,
-	this.add=function()
-	{
-		let newValue;
-		newValue=prompt("Vvedite znachenie",0);
-		this.Value=this.Value+this.newValue;
-		return this;
-	}
+	this.startingValue += +prompt('Vvedste znachenie', 0);
 }
 
-let pr = new constructor(15);
+let pr = new Constructor(15);
 
 console.log(pr.add());
 
