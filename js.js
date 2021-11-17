@@ -73,7 +73,7 @@ function makeUser(){
 }
 let user1= makeUser();
 console.log(user1);
-
+*/
 // обьект калькуятор с 3 методами: read()– запрашивает 2 значения, sum()–сумировать, mul()-
 let calculator={
 	a: 0,
@@ -99,52 +99,13 @@ let calculator={
 let ladder={
 	step: 0,
 	up:function(){
-		this.step=this.step+1;
+		this.step++;
 	},
 	down:function(){
-		this.step=this.step-1;
+		this.step=this--;
 	},
 	showStep:function(){
 		alert("Step="+this.step);
 		console.log("Step="+this.step);
 	}
-}*/
-function calculator(a,b){
-	this.read=function(){
-		this.a=prompt("Vvedite znachenie",0);
-		this.b=prompt("Vvedite znachenie",0);
-	},
-	this.sum=function(){
-		let sum;
-		sum=this.a+this.b;
-		return sum;
-	},
-	this.mul=function(){
-		let mul;
-		mul=this.a*this.b;
-		return mul;
-	}
 }
-
-let constr = new calculator(0,0);
-
-
-
-function constructor(startingValue){
-	this.startingValue=startingValue,
-	Value=this.startingValue,
-	this.add=function()
-	{
-		let newValue;
-		newValue=prompt("Vvedite znachenie",0);
-		this.Value=this.Value+this.newValue;
-		return this;
-	}
-}
-
-let pr = new constructor(15);
-
-console.log(pr.add());
-
-
-
