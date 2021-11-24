@@ -237,7 +237,7 @@ function unique(arr) {
   return Array.from(new Set(arr));
 }
 let values = ["С++", "С", "С#", "Pyton",
-  "Java", "JS", "Cotlin", "Delphi", ":-O"];
+  "Java", "JS", "Cotlin", "Delphi"];
 
 alert( unique(values) ); 
 
