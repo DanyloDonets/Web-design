@@ -138,7 +138,7 @@ function Constructor(startingValue){
 let pr = new Constructor(15);
 
 console.log(pr.add());
-*/
+
 console.log(document.body.firstElementChild)
 console.log(document.body.lastElementChild.previousElementSibling)
 console.log(document.body.lastElementChild.previousElementSibling.lastElementChild)
@@ -147,6 +147,13 @@ console.log(document.body.lastElementChild.previousElementSibling.lastElementChi
 console.log(document.body.children)
 console.log(document.body.firstElementChild)
 console.log(document.body.lastElementChild)
-
+*/
+console.log(document.getElementById("age-table"))
+console.log(document.getElementById("age-table").querySelectorAll('label'))
+console.log(document.getElementById("age-table").querySelector('td'))
+console.log(document.querySelector('form[name=search]'))
+inputs = document.querySelector('form[name=search]').querySelectorAll('input')
+console.log(inputs[0])
+console.log(inputs[inputs.length-1])
 
 
