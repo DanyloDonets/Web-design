@@ -108,7 +108,7 @@ let ladder={
 		alert("Step="+this.step);
 		console.log("Step="+this.step);
 	}
-}*/
+}
 function Calculator(a,b){
 	this.read=function(){
 		this.a=prompt("Vvedite znachenie",0);
@@ -138,6 +138,15 @@ function Constructor(startingValue){
 let pr = new Constructor(15);
 
 console.log(pr.add());
+*/
+console.log(document.body.firstElementChild)
+console.log(document.body.lastElementChild.previousElementSibling)
+console.log(document.body.lastElementChild.previousElementSibling.lastElementChild)
+
+//task2
+console.log(document.body.children)
+console.log(document.body.firstElementChild)
+console.log(document.body.lastElementChild)
 
 
 
